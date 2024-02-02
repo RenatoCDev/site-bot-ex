@@ -32,7 +32,8 @@
   </section>
 
   <section class="benefits">
-    <div><img class="bot" src="./assets/bot-left.png" alt=""></div>
+    <div>
+      <img class="bot" src="./assets/bot-left.png" alt=""></div>
     <div class="benefit">
       <h3>Respostas Imediatas</h3>
       <p>Proporcione aos seus clientes respostas instantâneas, garantindo que eles recebam informações cruciais em tempo real.</p>
@@ -53,8 +54,7 @@
   </section>
 
   <section class="plans">
-
-<img class="botplan" src="./assets/bot-friend.png" alt="">
+    <img class="botplan" src="./assets/bot-friend.png" alt="">
     <div class="plan">
       <h2>Start ex_</h2>
       <p class="i">R$119,90/mês</p>
@@ -80,23 +80,45 @@
       <a class="buttonwhats" href="https://api.whatsapp.com/send?phone=5521993006557" target="_blank">Fale com o fundador</a>
     </div>
     <div class="element4">
-      <div class="faq-item">
-        <h3 >Como funciona a integração com o WhatsApp?</h3>
-        <p>Muito simples! Você vai apenas escanear o QRCode encaminhado por nosso suporte e após isso, seu Whatsapp já funcionará automatizado.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Como são feitas as configurações iniciais?</h3>
-        <p>Na fase de Integração, nosso time mapeia o fluxo de filtragem do seu atendimento e realiza toda a configuração e programação do sistema. Num prazo de até 72h, toda a sua automatização estará ativa para recepcionar seus clientes.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Qual o suporte oferecido?</h3>
-        <p>Nosso suporte funciona de Segunda à Sexta-feira, das 9:00h às 18:00h. Nesse horário você pode entrar em contato conosco para suporte e atualizações.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Posso cancelar a assinatura a qualquer momento?</h3>
-        <p>Sim. É simples e sem burocracia. Basta entrar em contato com o nosso suporte.</p>
-      </div>
+    <div class="faq-item">
+        <h3 class="question">Como funciona a integração com o WhatsApp?
+          <ion-icon class="dropdown" name="chevron-down-circle-outline"></ion-icon>
+        </h3>
+        <div class="answer">Muito simples! Você vai apenas escanear o QRCode encaminhado por nosso suporte e após isso, seu Whatsapp já funcionará automatizado.</div>
     </div>
+    <div class="faq-item">
+        <h3 class="question">Como são feitas as configurações iniciais?
+          <ion-icon class="dropdown" name="chevron-down-circle-outline"></ion-icon>
+        </h3>
+        <div class="answer">Na fase de Integração, nosso time mapeia o fluxo de filtragem do seu atendimento e realiza toda a configuração e programação do sistema. Num prazo de até 72h, toda a sua automatização estará ativa para recepcionar seus clientes.</div>
+    </div>
+    <div class="faq-item">
+        <h3 class="question">Qual o suporte oferecido?
+          <ion-icon class="dropdown" name="chevron-down-circle-outline"></ion-icon>
+        </h3>
+        <div class="answer">Nosso suporte funciona de Segunda à Sexta-feira, das 9:00h às 18:00h. Nesse horário você pode entrar em contato conosco para suporte e atualizações.</div>
+    </div>
+    <div class="faq-item">
+        <h3 class="question">Posso cancelar a assinatura a qualquer momento?
+          <ion-icon class="dropdown" name="chevron-down-circle-outline"></ion-icon>
+        </h3>
+        <div class="answer">Sim. É simples e sem burocracia. Basta entrar em contato com o nosso suporte.</div>
+    </div>
+
+    <!--script para o efeito da caixa-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var faqItems = document.querySelectorAll('.faq-item');
+
+          faqItems.forEach(function (item) {
+              item.addEventListener('click', function () {
+                  this.classList.toggle('active');
+              });
+          });
+      });
+  </script>
+</div>
+
   </section>
 
   <footer>
@@ -116,6 +138,7 @@
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>  </script>
 
 </body>
 </html>

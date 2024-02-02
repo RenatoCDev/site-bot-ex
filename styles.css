@@ -202,6 +202,21 @@ body {
     border: 1px white solid;
     border-radius: 8px;
   }
+
+  .faq-item .answer {
+    display: none;
+  }
+
+  .faq-item.active .answer {
+    display: block;
+    font-family: 'inter', sans-serif;
+    color: #e6dddd;
+  }
+
+.dropdown {
+  margin: 0;
+}
+
   
   footer {
     background-color: #34495e;
