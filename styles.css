@@ -115,7 +115,7 @@ body {
   .plans {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin: 0;
   }
 
   .divplans {
@@ -136,6 +136,11 @@ body {
     border-radius: 15px;
   }
 
+  .setores {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
   .bot {
     margin: 20px;
     padding: 10px;
